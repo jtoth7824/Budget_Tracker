@@ -16,11 +16,6 @@ This application utilizes a no-sql database along with an IndexedDb (while in of
 * [Repository](#Repository)
 * [Deployment](#Deployment)
 
-## Screenshots
-* [Home Page](#Home-Page)
-* [Add Exercise](#Add-Exercise)
-* [Stats](#Stats)
-
 #### Home Page
 The following is a screenshot of the Budget Tracker home page when no data present.
 
