@@ -10,7 +10,7 @@ request.onupgradeneeded = function(event) {
 
 request.onsuccess = function(event) {
   db = event.target.result;
-
+console.log('navigator online = ' + navigator.onLine);
   // check if app is online before reading from db
   if (navigator.onLine) {
     checkDatabase();
@@ -27,7 +27,7 @@ function saveRecord(record) {
 
   // access your pending object store
   const store = transaction.objectStore("pending");
-
+console.log(record);
   // add record to your store with add method.
   store.add(record);
 }
@@ -66,4 +66,11 @@ function checkDatabase() {
 }
 
 // listen for app coming back online
-window.addEventListener("online", checkDatabase);
+//window.addEventListener("online", checkDatabase);
+window.addEventListener("online", (event) => {
+  console.log("now on line");
+})
+
+window.addEventListener("offline", (event) => {
+  console.log("now off line");
+})
