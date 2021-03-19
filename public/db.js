@@ -67,10 +67,7 @@ function checkDatabase() {
 
 // listen for app coming back online
 window.addEventListener("online", checkDatabase);
-/* window.addEventListener("online", (event) => {
-  console.log("now on line");
-})
 
 window.addEventListener("offline", (event) => {
   console.log("now off line");
-}) */
+})
