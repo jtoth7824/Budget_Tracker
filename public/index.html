@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#317EFB">
-  <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
+  <!-- manifest file-->
+  <link rel="manifest" href="manifest.webmanifest">
+  <!-- <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon"> -->
+  <link rel="shortcut icon" href="./assets/images/icons/icon-192x192.png" type="image/x-icon">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 
   <title>Budget Tracker</title>
 </head>
@@ -42,6 +45,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- db.js to handle determining where to write the data either IndexedDB or the mongoDB-->
   <script src="db.js"></script>
   <script src="index.js"></script>
 
