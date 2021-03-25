@@ -6,7 +6,7 @@ The Budget Tracker is an application to allow a user to track their expenses bot
 
 As the user utilizes the application while connected to internet, the entries are stored in a mongo Atlas database.  If the user loses the internet connection and goes offline, then any transactions continued to be made on the page are then stored instead in an IndexedDb for the browser.   Upon reconnection to the internet, the entries made while offline are then copied to the Atlas database and the IndexedDb is cleared.
 
-This application utilizes a no-sql database along with an IndexedDb (while in offline mode).  The application has been deployed to Heroku and connected to a mongo Atlas database.
+This application utilizes a no-sql database along with an IndexedDb (while in offline mode).  The application is also a progressive web application (PWA) that incorporated a manifest file and a service worker.  The application has been deployed to Heroku and connected to a mongo Atlas database.
 
 ## Table of Contents
 * [Screenshots](#Screenshots)
@@ -58,6 +58,7 @@ Followed by entering localhost:3000 in your browser URL line.  The application c
 * morgan
 * compression
 * IndexedDb
+* PWA
 
 ## Repository
 

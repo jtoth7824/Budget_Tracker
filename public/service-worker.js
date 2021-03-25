@@ -5,14 +5,11 @@ const FILES_TO_CACHE = [
   "/index.html",
   "/favicon.ico",
   "/manifest.webmanifest",
-  "/style.css",
-  "/db.js",
-  "/index.js",
+  "/assets/css/styles.css",
+  "/assets/js/db.js",
+  "/assets/js/index.js",
   "/service-worker.js",
-
   "/assets/images/icons/icon-192x192.png",
-  // "/assets/images/icons/icon-512x512.png",
-  // "/assets/images/icons/android-chrome-192x192.png",
   "/assets/images/icons/android-chrome-512x512.png",
   "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 ];
@@ -25,9 +22,7 @@ self.addEventListener("install", function (evt) {
   evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => cache.addAll(FILES_TO_CACHE)).then(() => skipWaiting())
   );
-  // tell the browser to activate this service worker immediately once it
-  // has finished installing
-//  self.skipWaiting();
+
 });
 
 //activate
