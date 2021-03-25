@@ -40,7 +40,7 @@ tr:nth-child(even) {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 825px;
   text-align: center;
 }
 
@@ -68,4 +68,5 @@ tr:nth-child(even) {
   overflow: auto;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
