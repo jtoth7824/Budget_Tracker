@@ -8,6 +8,15 @@ button, input {
   font-family: Arial;
 }
 
+button {
+  background-color:#af3d14;
+  color: white;
+}
+
+h1 {
+  font-weight: bold;
+}
+
 table {
   width: 100%;
 }
@@ -19,22 +28,33 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #e9b77e;
 }
 
 .error {
   color: red;
+  background-color: white;
+
+  margin-top: 10px;
 }
 
 .wrapper {
   margin: 0 auto;
-  max-width: 825px;
+  max-width: 900px;
   text-align: center;
 }
 
+.jumbotron {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #e9b77e;
+  color: white;
+}
+
 .total {
-  font-size: 150%;
+  font-size: 125%;
   text-decoration: underline;
+  margin-bottom: 30px;
 }
 
 .form {

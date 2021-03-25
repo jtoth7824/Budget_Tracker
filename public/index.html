@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,30 @@
   <link rel="manifest" href="manifest.webmanifest">
   <!-- <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon"> -->
   <link rel="shortcut icon" href="./assets/images/icons/icon-192x192.png" type="image/x-icon">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 
   <title>Budget Tracker</title>
 </head>
-<body>
-  <div class="wrapper">
-    <div class="total">
-      <div class="total">Your total is: $<span id="total">0</span></div>
-    </div>
 
+<body>
+
+  <div class="jumbotron">
+    <h1>Budget Tracker</h1>
+    <p class="lead">Enter your monthly transactions and see a graph of your budget over time.</p>
     <div class="form">
       <input type="text" id="t-name" placeholder="Name of transaction" />
       <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
       <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
       <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
-      <p class="error"></p>
+      <div class="error"></div>
+    </div>
+
+  </div>
+  <div class="wrapper">
+    <div class="total">
+      <div class="total">Your total is: $<span id="total">0</span></div>
     </div>
 
     <div class="transactions">
@@ -36,11 +43,11 @@
           <th>Amount</th>
         </thead>
         <tbody id="tbody">
-          
+
         </tbody>
       </table>
     </div>
-    
+
     <canvas id="myChart"></canvas>
   </div>
 
@@ -50,4 +57,5 @@
   <script src="index.js"></script>
 
 </body>
+
 </html>
