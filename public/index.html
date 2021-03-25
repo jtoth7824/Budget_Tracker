@@ -21,7 +21,7 @@
 
   <div class="jumbotron">
     <h1>Budget Tracker</h1>
-    <p class="lead">Enter your monthly transactions and see a graph of your budget over time.</p>
+    <p class="lead">Enter your transactions (add/subtract) and see a graph of your budget over time.</p>
     <div class="form">
       <input type="text" id="t-name" placeholder="Name of transaction" />
       <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
@@ -49,6 +49,7 @@
     </div>
 
     <div>
+      <div style="font-weight: bold; font-size: 20px">Account Balance Graph</div>
     <canvas id="myChart"></canvas>
     </div>
   </div>
