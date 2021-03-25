@@ -67,6 +67,5 @@ tr:nth-child(even) {
   max-height: 300px;
   overflow: auto;
   width: 90%;
-  margin: 0 auto;
-  padding-bottom: 30px;
+  margin: 0 auto 15px;
 }
